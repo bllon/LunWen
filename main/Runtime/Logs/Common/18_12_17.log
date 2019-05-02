@@ -1,0 +1,30 @@
+[ 2018-12-17T09:12:48+08:00 ] ::1 /LunWen/main/index.php/apply
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+ERR: 无法加载模块:Apply
+
+[ 2018-12-17T14:45:18+08:00 ] ::1 /LunWen/main/index.php/Index/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载模块:Index
+
+[ 2018-12-17T14:45:34+08:00 ] ::1 /LunWen/main/index.php/Index/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载模块:Index
+
+[ 2018-12-17T14:45:34+08:00 ] ::1 /LunWen/main/index.php/Index/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+ERR: 无法加载模块:Index
+
+[ 2018-12-17T14:45:35+08:00 ] ::1 /LunWen/main/index.php/Index/Apply/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+ERR: 无法加载模块:Index
+

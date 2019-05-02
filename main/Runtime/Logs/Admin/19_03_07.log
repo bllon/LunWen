@@ -1,0 +1,174 @@
+[ 2019-03-07T19:46:58+08:00 ] ::1 /LunWen/main/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: message D:\wamp64\www\LunWen\main\Runtime\Cache\Admin\b5ef08fa5e64640072374cae7edf8894.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+
+[ 2019-03-07T19:47:00+08:00 ] ::1 /LunWen/main/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: UPDATE `user` SET `user_statu`='0',`sessionid`='' WHERE ( username='' ) [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000186s ]
+
+[ 2019-03-07T19:47:21+08:00 ] ::1 /LunWen/main/index.php/Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0009s ]
+SQL: UPDATE `user` SET `user_statu`='0',`sessionid`='' WHERE ( username='' ) [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `school` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'xubei' AND `school_name` = '景德镇陶瓷大学科技艺术学院' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `user` SET `user_id`='1',`school_name`='景德镇陶瓷大学科技艺术学院',`username`='xubei',`password`='b189adf1860a70fedf7e5fb765333263',`phone`='18579250335',`salt`='(h)a&a(j',`user_statu`='1',`start_time`='2019-03-07 19:47:21',`off_time`=NULL,`host`='::1',`type`='1',`sessionid`='554648010702455' WHERE ( username='xubei' ) [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002284s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002195s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2019-03-07T19:47:23+08:00 ] ::1 /LunWen/main/index.php/Admin/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE ( username='xubei' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `school` WHERE ( school_key='a0bef1cfbe3ac7c60122688bb57361d4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `lunwen` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `lunwen` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lunwenbook` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lunwenbook` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `consumer` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `consumer` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `poplunwen` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `poplunwen` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' and todaytime='2019-03-07' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sele` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sele` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `adminvist` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `adminvist` WHERE ( adminvist_ip='::1' and adminvist_time='2019-03-07' )  [ RunTime:0.0002s ]
+SQL: INSERT INTO `adminvist` (`adminvist_ip`,`adminvist_time`) VALUES ('::1','2019-03-07') [ RunTime:0.0002s ]
+SQL: SELECT * FROM `user` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' and username='xubei' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000110s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000194s ]
+
+[ 2019-03-07T19:47:23+08:00 ] ::1 /LunWen/main/index.php/Admin/Data/getWeekData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `borrow` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `likeclick` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `likeclick` WHERE ( click_date>=1551628800 and click_date<1551715200 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `borrow` WHERE ( borrow_time>=1551628800 and borrow_time<1551715200 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `consumer` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `consumer` WHERE ( reg_time>=1551628800 and reg_time<1551715200 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `likeclick` WHERE ( click_date>=1551715200 and click_date<1551801600 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `borrow` WHERE ( borrow_time>=1551715200 and borrow_time<1551801600 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `consumer` WHERE ( reg_time>=1551715200 and reg_time<1551801600 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `likeclick` WHERE ( click_date>=1551801600 and click_date<1551888000 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `borrow` WHERE ( borrow_time>=1551801600 and borrow_time<1551888000 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `consumer` WHERE ( reg_time>=1551801600 and reg_time<1551888000 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `likeclick` WHERE ( click_date>=1551888000 and click_date<1551974400 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `borrow` WHERE ( borrow_time>=1551888000 and borrow_time<1551974400 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `consumer` WHERE ( reg_time>=1551888000 and reg_time<1551974400 and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 5 D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 436 行.
+NOTIC: [8] Undefined offset: 6 D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 436 行.
+NOTIC: [8] Undefined offset: 7 D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 436 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2019-03-07T19:47:23+08:00 ] ::1 /LunWen/main/index.php/Admin/Data/getMonthData
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `poplunwen` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `poplunwen` WHERE ( todaytime>='2019-02-05' and todaytime<='2019-03-07' and school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sele` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sele` WHERE ( school_name='景德镇陶瓷大学科技艺术学院' )  [ RunTime:0.0003s ]
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [8] Undefined index: 其他 D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 499 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+NOTIC: [2] Division by zero D:\wamp64\www\LunWen\main\Admin\Controller\DataController.class.php 第 494 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000224s ]
+

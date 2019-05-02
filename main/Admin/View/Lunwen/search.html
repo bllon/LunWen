@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>本科论文库后台</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="__PUBLIC__/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="__PUBLIC__/css/style.css">
+   <script src="__PUBLIC__/js/jquery-3.3.1.min.js"></script>
+  <!-- endinject -->
+  <link rel="shortcut icon" href="__PUBLIC__/images/favicon.png" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="{:U('./index')}">
+        	<!--<img src="__PUBLIC__/images/logo.svg" alt="logo"/>-->
+        	本科论文库
+        </a>
+        <a class="navbar-brand brand-logo-mini" href="{:U('./index')}">
+        	<!--<img src="__PUBLIC__/images/logo-mini.svg" alt="logo"/>-->
+        	&nbsp;&nbsp;本科论文库
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="search-field d-none d-md-block">
+          <form class="d-flex align-items-center h-100" action="{:U('./search')}">
+            <div class="input-group">
+              <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>                
+              </div>
+              <input type="text" class="form-control bg-transparent border-0" placeholder="搜索论文">
+            </div>
+          </form>
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="__PUBLIC__/images/faces/face20.jpg" alt="image">
+                <span class="availability-status online"></span>             
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">{$Think.cookie.username}</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="{:U('./logout')}">
+                <i class="mdi mdi-logout mr-2 text-primary"></i>
+                	注销
+              </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block full-screen-link">
+            <a class="nav-link">
+              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator" href="{:U('./sendMessage')}">
+              <i class="mdi mdi-email-outline"></i>
+              <!--<span class="count-symbol bg-danger"></span>-->
+            </a>            
+          </li>
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="{:U('./logout')}">
+              <i class="mdi mdi-power"></i>
+            </a>
+          </li>
+          <!--<li class="nav-item nav-settings d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-format-line-spacing"></i>
+            </a>
+          </li>-->
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{:U('./index')}">
+              <span class="menu-title">首页</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#shangchuan-pages" aria-expanded="false" aria-controls="shangchuan-pages">
+              <span class="menu-title">上传论文</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+            <div class="collapse" id="shangchuan-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:U('./upload_message')}"> 上传论文基本信息 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./upload_img')}"> 上传论文图片内容 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./upload_word')}"> 上传论文相关文档</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./upload_lunwenBook')}"> 上传论文缩编封面 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./upload_bookImg')}"> 上传论文缩编内容</a></li>
+              </ul>
+            </div>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#lunwen-pages" aria-expanded="false" aria-controls="lunwen-pages">
+              <span class="menu-title">论文管理</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+            <div class="collapse" id="lunwen-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:U('./lunwen_list')}"> 论文列表 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./rank')}"> 分类设置 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./search')}"> 搜索论文 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#borrow-pages" aria-expanded="false" aria-controls="borrow-pages">
+              <span class="menu-title">借阅管理</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+            <div class="collapse" id="borrow-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:U('./borrow_list')}"> 借阅列表 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./return_list')}"> 归还列表 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./history')}"> 历史记录 </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#user-pages" aria-expanded="false" aria-controls="user-pages">
+              <span class="menu-title">用户管理</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+            <div class="collapse" id="user-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:U('./consumer_list')}"> 用户列表 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./consumer_souso')}"> 搜索用户 </a></li>
+              </ul>
+            </div>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+              <span class="menu-title">用户</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+            <div class="collapse" id="general-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{:U('./login')}"> 登录 </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{:U('./register')}"> 注册 </a></li>
+              </ul>
+            </div>
+          </li> 
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper"> 
+          <!--dashboard.js-->
+          <div class="page-header">
+            <h3 class="page-title">
+      		论文搜索
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{:U('./search')}">论文管理</a></li>
+                <li class="breadcrumb-item active" aria-current="page">论文搜索</li>
+              </ol>
+            </nav>
+          </div>  
+      	  <form action="{:U('./search')}" method="post">
+      	  	<div class="form-group">
+	            <div class="input-group">
+	              <input type="text" name="keyWords" class="form-control" placeholder="关键字 / 论文标题" aria-label="Recipient's username" aria-describedby="basic-addon2">
+	              <div class="input-group-append">
+	                <button class="btn btn-sm btn-gradient-danger text-secondary bold" type="submit"> 搜 索 </button>
+	              </div>
+	            </div>
+          	</div>
+      	  </form>
+      	  <if condition="$tishi">
+      	  	<p class="text text-info text-center bg-secondary" style="padding:20px 0;letter-spacing:1px;font-size:18px;">{$tishi}</p>
+      	  </if>
+      	  <if condition="$lunwenlist">
+      	  	<p class="text text-dark bg-secondary" style="padding:20px 10px;letter-spacing:1px;">
+      	  		关于词条&nbsp;<span class="text-info" style="font-size:18px;">{$keywords}</span>
+      	  		搜索到的结果有&nbsp;&nbsp;<span class="text-info">{$listnum}条</span>
+      	  	</p>
+      	  </if>
+      	  <div class="row">
+      	  	<foreach name="lunwenlist" item="lunwen">
+	      	  	<div class="col-12 grid-margin stretch-card">
+	              <div class="card">
+	                <div class="card-body">
+	                  <h4 class="card-title">{$lunwen.lunwen_title}</h4>
+	                  <p class="card-description">
+	                 		作者&nbsp;&nbsp;<span class="text-black">{$lunwen.writer}</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>{$lunwen.addtime}</span>
+	                  <ul class="list-inline">
+	                  	<foreach name="lunwen.thumb_img" item="img">
+	                  		<li class="list-inline-item">
+		                  		<img src="http://xubeixyz123.com/LunWen/main/{$img}" style="width:100px;height:100px;padding:10px 20px;display:block;"/>
+		                  		<p class="text-center text-dark">
+		                  			论文展图
+		                  		</p>
+		                  	</li>
+	                  	</foreach>
+	                  </ul>
+	                </div>
+	              </div>
+	            </div>
+            </foreach>
+      	  </div>
+          
+          
+          
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="{:U('../Home')}" target="_blank">本科论文库</a>. 所有后台人员. </span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">分享论文，便捷大家
+              <i class="mdi mdi-heart text-danger"></i> - {$school} </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="__PUBLIC__/vendors/js/vendor.bundle.base.js"></script>
+  <script src="__PUBLIC__/vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="__PUBLIC__/js/off-canvas.js"></script>
+  <script src="__PUBLIC__/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="__PUBLIC__/js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+</body>
+<script>
+	$('.stretch-card').each(function(i){
+		$('.stretch-card').eq(i).find('.list-inline-item').each(function(j){
+			$('.stretch-card').eq(i).find('.list-inline-item').eq(j).find('p').html('第'+(j+1)+'页');
+		});
+	});
+	
+</script>
+
+</html>

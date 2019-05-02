@@ -1,0 +1,16 @@
+@font-face {    
+		font-family: 'NeuesBauenDemo';       
+		src: url('../../fonts/2.ttf') format('truetype');            
+  		font-weight: bold;    
+  		font-style: normal;  
+ }
+ @font-face {    
+		font-family: 'wang';       
+		src: url('../../fonts/1.ttf') format('truetype');            
+  		font-weight: bold;    
+  		font-style: normal;  
+}
+.logo-word{
+	font-family:'NeuesBauenDemo';
+	font-size:30px;
+}

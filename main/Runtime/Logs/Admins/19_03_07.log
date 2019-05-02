@@ -1,0 +1,343 @@
+[ 2019-03-07T19:47:38+08:00 ] ::1 /LunWen/main/index.php/Admins
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: message D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\066a1cd7d4d543df20811f61f4fac998.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+
+[ 2019-03-07T19:47:40+08:00 ] ::1 /LunWen/main/index.php/Admins/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000182s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000109s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000193s ]
+
+[ 2019-03-07T19:47:40+08:00 ] ::1 /LunWen/main/index.php/Admins/User/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] Use of undefined constant fasle - assumed 'fasle' (this will throw an Error in a future version of PHP) D:\wamp64\www\LunWen\main\Admins\Controller\UserController.class.php 第 68 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2019-03-07T19:47:58+08:00 ] ::1 /LunWen/main/index.php/Admins/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000166s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` WHERE ( admin_username='root' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `administrators` SET `admin_id`='1',`admin_username`='root',`admin_password`='a3cb9acdaa55d861396346c1c3d822b7',`admin_phone`='18579250335',`salt`='&*aha&^*',`session_id`='421834549814213' WHERE ( admin_username='root' ) [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.002968s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001744s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.001922s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000127s ]
+
+[ 2019-03-07T19:47:58+08:00 ] ::1 /LunWen/main/index.php/Admins/User/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+NOTIC: [2] Use of undefined constant fasle - assumed 'fasle' (this will throw an Error in a future version of PHP) D:\wamp64\www\LunWen\main\Admins\Controller\UserController.class.php 第 68 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000157s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000254s ]
+
+[ 2019-03-07T19:48:00+08:00 ] ::1 /LunWen/main/index.php/Admins/Admins/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\IndexController.class.php 第 65 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\IndexController.class.php 第 65 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `lunwen` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `lunwen`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `lunwenbook` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `lunwenbook`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `user`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `consumer` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `consumer`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `visit` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `visit` WHERE ( visit_time='2019-03-07' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `adminvist` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `adminvist` WHERE ( adminvist_time='2019-03-07' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `consumer` WHERE ( reg_time>=1551888000 and reg_time<=1551974400 )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `poplunwen` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `poplunwen` WHERE ( todaytime='2019-03-07' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2019-03-07T19:48:04+08:00 ] ::1 /LunWen/main/index.php/Admins/Apply/apply_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\ApplyController.class.php 第 153 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\ApplyController.class.php 第 153 行.
+SQL: SHOW COLUMNS FROM `apply` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `apply`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\LunWen\main\Admins\Controller\ApplyController.class.php 第 23 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\ApplyController.class.php 第 26 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\ApplyController.class.php 第 30 行.
+SQL: SELECT * FROM `apply` ORDER BY apply_id LIMIT 0,5   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: keyword D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\8e6a32b401270ba090cf002e9ad7f20d.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2019-03-07T19:48:10+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 154 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 157 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 161 行.
+SQL: SELECT * FROM `school` ORDER BY school_id LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: keyword D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\76996d81d3e8767893bfdd5b3b20c5b2.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
+
+[ 2019-03-07T19:48:19+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_close?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0010s ]
+SQL: UPDATE `school` SET `statu`='0' WHERE ( school_id='2' ) [ RunTime:0.0023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000243s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000323s ]
+
+[ 2019-03-07T19:48:19+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 154 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 157 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 161 行.
+SQL: SELECT * FROM `school` ORDER BY school_id LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: keyword D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\76996d81d3e8767893bfdd5b3b20c5b2.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2019-03-07T19:48:24+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_start?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0009s ]
+SQL: UPDATE `school` SET `statu`='1' WHERE ( school_id='2' ) [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000298s ]
+
+[ 2019-03-07T19:48:24+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 154 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 157 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 161 行.
+SQL: SELECT * FROM `school` ORDER BY school_id LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: keyword D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\76996d81d3e8767893bfdd5b3b20c5b2.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014679s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014797s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2019-03-07T19:48:35+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_close?id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0015s ]
+SQL: UPDATE `school` SET `statu`='0' WHERE ( school_id='2' ) [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2019-03-07T19:48:35+08:00 ] ::1 /LunWen/main/index.php/Admins/Data/school_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `administrators` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `administrators` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+NOTIC: [2] A non-numeric value encountered D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 364 行.
+SQL: SHOW COLUMNS FROM `school` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `school`  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: page D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 154 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 157 行.
+NOTIC: [8] Undefined index: to D:\wamp64\www\LunWen\main\Admins\Controller\DataController.class.php 第 161 行.
+SQL: SELECT * FROM `school` ORDER BY school_id LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: keyword D:\wamp64\www\LunWen\main\Runtime\Cache\Admins\76996d81d3e8767893bfdd5b3b20c5b2.php 第 176 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000228s ]
+

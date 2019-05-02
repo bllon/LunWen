@@ -1,0 +1,8 @@
+[ 2018-12-29T21:39:08+08:00 ] ::1 /LunWen/main/index.php/Admin/Data/newLunwen?school=%E6%99%AF%E5%BE%B7%E9%95%87%E9%99%B6%E7%93%B7%E5%A4%A7%E5%AD%A6%E7%A7%91%E6%8A%80%E8%89%BA%E6%9C%AF%E5%AD%A6%E9%99%A2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+
